@@ -12,12 +12,12 @@ public class HomePage extends TestBase {
 	
 	
 
-	public static void searchByDistrict() throws InterruptedException 
+	public void verifyVaccineSlots(String statep,String districtp,String costp,String vaccinep) throws InterruptedException 
 	{
-		String statep = prop.getProperty("state");
-		String districtp = prop.getProperty("district");
-		String costp = prop.getProperty("cost");
-		String vaccinep = prop.getProperty("vaccine");
+		//String statep = prop.getProperty("state");
+		//String districtp = prop.getProperty("district");
+		//String costp = prop.getProperty("cost");
+		//String vaccinep = prop.getProperty("vaccine");
 		
 		WebElement search = driver.findElement(By.xpath("//div[@class = 'mat-tab-label-content' ] [text()= 'Search by District']"));
         
@@ -50,6 +50,7 @@ public class HomePage extends TestBase {
         //Get Vaccination Centres
         List<WebElement> centres = driver.findElements(By.xpath("//div[@class='row-disp']/h5[@class='center-name-title']"));
         Iterator<WebElement> itr = centres.iterator();
+        int vaccinecount = centres.size();
         System.out.println(centres.size()+" Vaccine Centres Found:");
         while(itr.hasNext()) {
         
@@ -78,5 +79,21 @@ public class HomePage extends TestBase {
         	System.out.println(itr2.next().getAttribute("textContent"));
         	
         }
+		
 	}
+
+	public String verifyHomePageTitle() {
+		
+		return driver.getTitle();
+	}
+
+
+
+
+
+
+
+	
+	
+
 }

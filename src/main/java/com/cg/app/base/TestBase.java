@@ -10,8 +10,6 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.cg.app.pages.HomePage;
-
 
 
 public class TestBase {
@@ -49,8 +47,7 @@ public class TestBase {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		driver.get(prop.getProperty("url"));
-		HomePage.searchByDistrict();
-		driver.quit();
+		
 	}
 
 
