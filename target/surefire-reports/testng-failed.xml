@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyVaccineSlots"/>
+          <include name="verifyVaccineSlots" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.cg.app.testcases.HomePageTest -->
     </classes>

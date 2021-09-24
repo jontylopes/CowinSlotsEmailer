@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" class="navigator-link">
-              <span class="suite-name border-skipped">com.cg.app.testcases.HomePageTest</span>
+              <span class="suite-name border-failed">com.cg.app.testcases.HomePageTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,  1 skipped,  1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" class="hide-methods skipped suite-com.cg.app.testcases.HomePageTest"> (hide)</a> <!-- hide-methods skipped suite-com.cg.app.testcases.HomePageTest -->
-                      <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" class="show-methods skipped suite-com.cg.app.testcases.HomePageTest"> (show)</a> <!-- show-methods skipped suite-com.cg.app.testcases.HomePageTest -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" class="hide-methods failed suite-com.cg.app.testcases.HomePageTest"> (hide)</a> <!-- hide-methods failed suite-com.cg.app.testcases.HomePageTest -->
+                      <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" class="show-methods failed suite-com.cg.app.testcases.HomePageTest"> (show)</a> <!-- show-methods failed suite-com.cg.app.testcases.HomePageTest -->
                     </span>
-                    <div class="method-list-content skipped suite-com.cg.app.testcases.HomePageTest">
+                    <div class="method-list-content failed suite-com.cg.app.testcases.HomePageTest">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" title="com.cg.app.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyVaccineSlots">verifyVaccineSlots</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" title="com.cg.app.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyVaccineSlots(Maharashtra, Palghar, Paid, Covishield)">verifyVaccineSlots(Maharashtra, Palghar, Paid, Covishield)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-com.cg.app.testcases.HomePageTest -->
+                    </div> <!-- method-list-content failed suite-com.cg.app.testcases.HomePageTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -117,6 +117,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" title="com.cg.app.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyHomePageTitleTest">verifyHomePageTitleTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-com.cg.app.testcases.HomePageTest" title="com.cg.app.testcases.HomePageTest" class="method navigator-link" hash-for-method="verifyVaccineSlots(Maharashtra, Mumbai, Free, Covishield)">verifyVaccineSlots(Maharashtra, Mumbai, Free, Covishield)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-com.cg.app.testcases.HomePageTest -->
@@ -131,28 +136,32 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com.cg.app.testcases.HomePageTest" class="panel com.cg.app.testcases.HomePageTest">
-          <div class="suite-com.cg.app.testcases.HomePageTest-class-skipped">
+          <div class="suite-com.cg.app.testcases.HomePageTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.cg.app.testcases.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyVaccineSlots">
-                  </a> <!-- verifyVaccineSlots -->
+                  <a name="verifyVaccineSlots(Maharashtra, Palghar, Paid, Covishield)">
+                  </a> <!-- verifyVaccineSlots(Maharashtra, Palghar, Paid, Covishield) -->
                   <span class="method-name">verifyVaccineSlots</span>
-                  <div class="stack-trace">java.lang.RuntimeException: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Sheet.getLastRowNum()&quot; because &quot;com.cg.app.util.TestUtil.sheet&quot; is null
-Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss.usermodel.Sheet.getLastRowNum()&quot; because &quot;com.cg.app.util.TestUtil.sheet&quot; is null
-	at com.cg.app.util.TestUtil.getTestData(TestUtil.java:35)
-	at com.cg.app.testcases.HomePageTest.TestData(HomePageTest.java:33)
-	... 31 more
-... Removed 39 stack frames
+                  <span class="parameters">(Maharashtra, Palghar, Paid, Covishield)</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 42 out of bounds for length 42
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at com.cg.app.pages.HomePage.verifyVaccineSlots(HomePage.java:89)
+	at com.cg.app.testcases.HomePageTest.verifyVaccineSlots(HomePageTest.java:41)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-com.cg.app.testcases.HomePageTest-class-skipped -->
+          </div> <!-- suite-com.cg.app.testcases.HomePageTest-class-failed -->
           <div class="suite-com.cg.app.testcases.HomePageTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -164,6 +173,14 @@ Caused by: java.lang.NullPointerException: Cannot invoke &quot;org.apache.poi.ss
                   <a name="verifyHomePageTitleTest">
                   </a> <!-- verifyHomePageTitleTest -->
                   <span class="method-name">verifyHomePageTitleTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyVaccineSlots(Maharashtra, Mumbai, Free, Covishield)">
+                  </a> <!-- verifyVaccineSlots(Maharashtra, Mumbai, Free, Covishield) -->
+                  <span class="method-name">verifyVaccineSlots</span>
+                  <span class="parameters">(Maharashtra, Mumbai, Free, Covishield)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,20 +236,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyHomePageTitleTest')
+data.setCell(0, 1, 'verifyVaccineSlots')
 data.setCell(0, 2, 'com.cg.app.testcases.HomePageTest')
-data.setCell(0, 3, 7);
+data.setCell(0, 3, 10769);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyVaccineSlots')
 data.setCell(1, 2, 'com.cg.app.testcases.HomePageTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 4048);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyHomePageTitleTest')
+data.setCell(2, 2, 'com.cg.app.testcases.HomePageTest')
+data.setCell(2, 3, 16);
 window.suiteTableData['com.cg.app.testcases.HomePageTest']= { tableData: data, tableDiv: 'times-div-com.cg.app.testcases.HomePageTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 ms</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-com.cg.app.testcases.HomePageTest">
               </div> <!-- times-div-com.cg.app.testcases.HomePageTest -->
             </div> <!-- times-div -->
@@ -265,11 +286,37 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">3050 ms</span>
+                <span class="method-start">3185 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">3058 ms</span>
+                <span class="method-start">3202 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">3846 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyVaccineSlots(Maharashtra, Palghar, Paid, Covishield)</span>
+                <span class="method-start">6213 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10263 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10412 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyVaccineSlots(Maharashtra, Mumbai, Free, Covishield)</span>
+                <span class="method-start">12803 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">23572 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -18,12 +18,7 @@ public class TestBase {
 	public static Properties prop;
 	public static JavascriptExecutor js;
 
-	public static void main(String args[]) throws InterruptedException
-	{
-		TestBase test = new TestBase();
-		test.initialization();
-		
-	}
+	
 	
 	public void initialization() throws InterruptedException{
 		

@@ -5,10 +5,9 @@
     <classes>
       <class name="com.cg.app.testcases.HomePageTest">
         <methods>
-          <include name="verifyHomePageTitleTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyVaccineSlots"/>
+          <include name="verifyVaccineSlots" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- com.cg.app.testcases.HomePageTest -->
     </classes>
