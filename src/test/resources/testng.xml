@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CoWin Test Suite" guice-stage="DEVELOPMENT">
+
+	<listeners>
+		<listener
+			class-name="com.cg.app.util.ExtentReporterNG" />
+	</listeners>
+
+	<test name="Automation tests" verbose="2">
+		<classes>
+			<class name="com.cg.app.testcases.HomePageTest" />
+		</classes>
+	</test> <!-- Default test -->
+	
+</suite> <!-- Default suite -->
+            
